@@ -39,9 +39,10 @@ class Song
 
   def self.genre_count
     genre_count = {}
-    @@genres.uniq.map do |genre|
+    @@genres.uniq.each do |genre|
       genre_count[genre] = @@genres.count(genre)
     end
+    genre_count
   end
 
   def self.artist_count
