@@ -38,8 +38,9 @@ class Song
   end
 
   def self.genre_count
+    genre_count = {}
     @@genres.uniq.map do |genre|
-      {genre => @@genres.count(genre)}
+      genre_count[genre] = @@genres.count(genre)
     end
   end
 
