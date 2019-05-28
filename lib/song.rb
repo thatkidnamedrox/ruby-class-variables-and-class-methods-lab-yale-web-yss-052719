@@ -17,7 +17,7 @@ class Song
     @@all[name]["genre"] = genre
     @@count += 1
     @@genres << genre
-
+    @@artists << artists
 
   end
 
