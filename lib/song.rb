@@ -35,17 +35,3 @@ class Song
   def self.genre_count
     @@genre.map do |genre|
       count =
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
