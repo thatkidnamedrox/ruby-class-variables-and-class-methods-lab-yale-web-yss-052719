@@ -32,6 +32,31 @@ class Song
     @@artists
   end
 
+  def self.all
+    @@all
+  end
+
   def self.genre_count
     @@genre.map do |genre|
-      count =
+      count = self.all.count do |song, _|
+        self.all[song]["genre"] == genre
+      end
+      puts count
+    end
+  end
+
+end
+          
+
+
+
+
+
+
+
+
+
+
+
+        
+      
