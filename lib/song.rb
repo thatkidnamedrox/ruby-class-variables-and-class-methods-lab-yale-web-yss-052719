@@ -17,7 +17,7 @@ class Song
     @@count += 1
     @@genres.include?(genre) ? nil : @@genres << genre
     @@artists.include?(artist) ? nil : @@artists << artist
-    
+
   end
 
   def self.count
@@ -34,7 +34,7 @@ class Song
 
   def self.genre_count
     @@genre.map do |genre|
-      count = 
+      count =
 
 
 
