@@ -12,6 +12,7 @@ class Song
     @artist = artist
     @genre = genre
 
+    @@all[name] = {}
     @@all[name]["artist"] = artist
     @@all[name]["genre"] = genre
 
