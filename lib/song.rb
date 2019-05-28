@@ -38,12 +38,12 @@ class Song
   end
 
   def self.genre_count
-    @@genre.uniq.map do |genre|
-      count = self.all.count do |song, _|
-        self.all[song]["genre"] == genre
-      end
-      puts count
+    @@genres.uniq.map do |genre|
+      {genre => @@genres.count(genre)}
     end
+  end
+
+  def self.artist_count
   end
 
 end
