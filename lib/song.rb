@@ -12,8 +12,8 @@ class Song
     @artist = artist
     @genre = genre
 
-    @@all[name][artist] = artist
-    @@all[name][genre] = genre
+    @@all[name]["artist"] = artist
+    @@all[name]["genre"] = genre
     @@count += 1
     @@genres.include?(genre) ? nil : @@genres << genre
     @@artists.include?(artist) ? nil : @@artists << artist
